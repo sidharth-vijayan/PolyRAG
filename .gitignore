@@ -1,0 +1,16 @@
+# ============================================================
+# .gitignore — MultiModal RAG System
+# ============================================================
+
+# Environment variables (contains API keys — never commit)
+.env
+
+# Python virtual environment
+venv/
+
+# Python bytecode cache
+__pycache__/
+*.pyc
+
+# ChromaDB local persistence directory
+chroma_db/

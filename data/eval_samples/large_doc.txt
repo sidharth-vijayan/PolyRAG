@@ -1,0 +1,87 @@
+Climate Change: Causes, Effects, and Global Response
+
+Executive Summary
+
+Climate change refers to long-term shifts in global temperatures and weather patterns. While natural factors such as volcanic eruptions and solar cycles have historically influenced Earth's climate, human activities — particularly the burning of fossil fuels — have been the dominant driver of observed warming since the mid-20th century. The global average temperature has risen by approximately 1.1 degrees Celsius above pre-industrial levels as of 2023, and the rate of warming is accelerating.
+
+Chapter 1: The Science of Climate Change
+
+The Greenhouse Effect
+
+The greenhouse effect is a natural process that warms Earth's surface. When the sun's energy reaches the Earth's atmosphere, some of it is reflected back to space and the rest is absorbed and re-radiated by greenhouse gases. These gases include carbon dioxide (CO2), methane (CH4), nitrous oxide (N2O), and fluorinated gases. Without the natural greenhouse effect, Earth's average temperature would be about -18 degrees Celsius, far too cold to support life.
+
+However, human activities have significantly increased the concentration of these gases in the atmosphere. Carbon dioxide levels have risen from approximately 280 parts per million (ppm) in pre-industrial times to over 420 ppm in 2024. Methane concentrations have more than doubled since 1750. These elevated levels trap additional heat, causing global temperatures to rise beyond natural variability.
+
+Key Evidence for Human-Caused Climate Change
+
+Multiple lines of evidence confirm that current climate change is primarily caused by human activities:
+
+1. Temperature Records: Global surface temperature data from NASA, NOAA, and the UK Met Office all show a clear warming trend, with the 10 warmest years on record all occurring since 2010.
+
+2. Ice Core Data: Analysis of Antarctic ice cores reveals that current CO2 levels are higher than at any point in the past 800,000 years.
+
+3. Ocean Warming: The oceans have absorbed more than 90% of the excess heat trapped by greenhouse gases, leading to measurable increases in ocean temperature down to depths of 2,000 meters.
+
+4. Sea Level Rise: Global mean sea level has risen by approximately 21-24 centimeters since 1880, with the rate of rise accelerating in recent decades.
+
+5. Attribution Studies: Climate models that include both natural and human factors accurately reproduce observed temperature trends, while models with only natural factors cannot explain the warming since 1950.
+
+Chapter 2: Impacts of Climate Change
+
+Environmental Impacts
+
+Climate change affects virtually every ecosystem on Earth:
+
+- Arctic and Antarctic: The Arctic is warming nearly four times faster than the global average. Arctic sea ice extent has declined by approximately 13% per decade since 1979. Antarctic ice sheets are losing mass at accelerating rates, contributing to sea level rise.
+
+- Oceans: Ocean acidification, caused by the absorption of excess CO2, threatens marine ecosystems, particularly coral reefs and shellfish. The Great Barrier Reef has experienced five mass bleaching events since 2016.
+
+- Biodiversity: An estimated 25% of species face extinction risk due to climate change. Shifting temperature zones force species to migrate to new habitats, disrupting ecological relationships.
+
+- Extreme Weather: Climate change intensifies extreme weather events. Heat waves are becoming more frequent and severe. Hurricane intensity is increasing due to warmer ocean surfaces. Precipitation patterns are shifting, leading to more intense rainfall in some regions and prolonged droughts in others.
+
+Human Impacts
+
+The effects of climate change on human societies are far-reaching:
+
+- Agriculture: Changing rainfall patterns, increased frequency of droughts and floods, and shifts in growing seasons threaten food security. The IPCC estimates that crop yields could decline by 2-6% per decade due to climate change, while global food demand is projected to increase by 14% per decade through 2050.
+
+- Health: Climate change poses direct health risks through heat stress, air pollution, and the spread of vector-borne diseases like malaria and dengue fever to new regions. The World Health Organization estimates that climate change will cause approximately 250,000 additional deaths per year between 2030 and 2050.
+
+- Water Resources: Approximately 2 billion people currently live in water-stressed areas, a number projected to increase significantly due to climate change. Glacier retreat threatens freshwater supplies for millions of people in mountainous regions.
+
+- Economic Impact: The economic costs of climate change are substantial. Unmitigated climate change could reduce global GDP by 10-23% by 2100, according to various economic models.
+
+- Displacement: Rising seas, extreme weather, and resource scarcity are expected to displace between 200 million and 1 billion people by 2050, creating climate refugees.
+
+Chapter 3: Mitigation Strategies
+
+Reducing greenhouse gas emissions is essential to limit the worst impacts of climate change. Key strategies include:
+
+Energy Transition
+
+The shift from fossil fuels to renewable energy sources is the most critical mitigation strategy. Solar and wind power costs have fallen by 85% and 55% respectively since 2010, making them cost-competitive with fossil fuels in most markets. Nuclear energy provides reliable, low-carbon baseload power. Energy storage technologies, particularly lithium-ion batteries, are crucial for managing the intermittency of renewable sources.
+
+Transportation
+
+Transportation accounts for approximately 16% of global greenhouse gas emissions. Electric vehicles (EVs) are rapidly gaining market share, with global EV sales exceeding 10 million units in 2022. Public transit expansion, cycling infrastructure, and urban planning that reduces commuting distances all contribute to emissions reduction. For aviation and shipping, sustainable fuels and efficiency improvements are being developed.
+
+Carbon Capture and Removal
+
+Carbon capture and storage (CCS) technologies capture CO2 emissions from industrial sources and store them underground. Direct air capture (DAC) removes CO2 directly from the atmosphere. While promising, these technologies remain expensive and are currently deployed at limited scale. Nature-based solutions, including reforestation, afforestation, and wetland restoration, also remove carbon from the atmosphere while providing co-benefits for biodiversity and water management.
+
+Chapter 4: International Policy Framework
+
+The Paris Agreement
+
+Adopted in 2015 by 196 parties, the Paris Agreement is the cornerstone of international climate policy. Its central aim is to hold the increase in global average temperature to well below 2 degrees Celsius above pre-industrial levels and to pursue efforts to limit the temperature increase to 1.5 degrees Celsius. Countries submit Nationally Determined Contributions (NDCs) outlining their emissions reduction targets and climate action plans.
+
+National Net-Zero Commitments
+
+As of 2024, more than 140 countries have announced net-zero emissions targets, covering approximately 90% of global GDP. The European Union aims for carbon neutrality by 2050, China by 2060, and India by 2070. However, current NDCs are insufficient to meet the Paris Agreement goals, and significant acceleration of climate action is required.
+
+Conclusion
+
+Climate change represents the defining challenge of the 21st century. The scientific evidence is unequivocal: human activities are warming the planet at an unprecedented rate. The impacts are already being felt across every continent and ocean. While the challenge is immense, the solutions exist — from renewable energy and electric vehicles to carbon removal and nature-based solutions. What is needed now is the political will and economic investment to deploy these solutions at the scale and speed required. Every fraction of a degree of warming matters, and every action to reduce emissions counts.
+
+The window for action is narrowing, but it is not yet closed. The decisions made in this decade will determine the trajectory of global climate for centuries to come.

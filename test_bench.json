@@ -1,0 +1,92 @@
+[
+  {
+    "id": "TC-001",
+    "description": "Small document — basic factual recall",
+    "source_file": "data/eval_samples/small_doc.txt",
+    "file_type": ".txt",
+    "expected_agent": "DocumentAgent",
+    "question": "What is the chemical equation for photosynthesis?",
+    "expected_answer": "The overall chemical equation for photosynthesis is 6CO2 + 6H2O + light energy yields C6H12O6 + 6O2. Six molecules of carbon dioxide and six molecules of water, using light energy, produce one molecule of glucose and six molecules of oxygen."
+  },
+  {
+    "id": "TC-002",
+    "description": "Small document — conceptual understanding",
+    "source_file": "data/eval_samples/small_doc.txt",
+    "file_type": ".txt",
+    "expected_agent": "DocumentAgent",
+    "question": "What are the two main stages of photosynthesis and where do they occur?",
+    "expected_answer": "The two main stages are the light-dependent reactions, which take place in the thylakoid membranes, and the light-independent reactions (Calvin cycle), which occur in the stroma of the chloroplast."
+  },
+  {
+    "id": "TC-003",
+    "description": "Medium document — specific detail retrieval",
+    "source_file": "data/eval_samples/medium_doc.txt",
+    "file_type": ".txt",
+    "expected_agent": "DocumentAgent",
+    "question": "What are the three primary types of machine learning?",
+    "expected_answer": "The three primary types of machine learning are supervised learning, unsupervised learning, and reinforcement learning. Supervised learning uses labeled data, unsupervised learning finds patterns in unlabeled data, and reinforcement learning involves an agent learning through rewards and penalties."
+  },
+  {
+    "id": "TC-004",
+    "description": "Medium document — deep technical detail",
+    "source_file": "data/eval_samples/medium_doc.txt",
+    "file_type": ".txt",
+    "expected_agent": "DocumentAgent",
+    "question": "What are transformers in deep learning and when were they introduced?",
+    "expected_answer": "Transformers were introduced in the 2017 paper 'Attention Is All You Need.' They use self-attention mechanisms to process all positions in a sequence simultaneously. Transformers form the foundation of modern large language models like GPT, BERT, and LLaMA."
+  },
+  {
+    "id": "TC-005",
+    "description": "Large document — broad topic comprehension",
+    "source_file": "data/eval_samples/large_doc.txt",
+    "file_type": ".txt",
+    "expected_agent": "DocumentAgent",
+    "question": "How much has the global average temperature risen above pre-industrial levels?",
+    "expected_answer": "The global average temperature has risen by approximately 1.1 degrees Celsius above pre-industrial levels as of 2023, and the rate of warming is accelerating."
+  },
+  {
+    "id": "TC-006",
+    "description": "Large document — numerical data retrieval",
+    "source_file": "data/eval_samples/large_doc.txt",
+    "file_type": ".txt",
+    "expected_agent": "DocumentAgent",
+    "question": "What is the current CO2 concentration in the atmosphere compared to pre-industrial times?",
+    "expected_answer": "Carbon dioxide levels have risen from approximately 280 parts per million (ppm) in pre-industrial times to over 420 ppm in 2024. Methane concentrations have also more than doubled since 1750."
+  },
+  {
+    "id": "TC-007",
+    "description": "Large document — multi-section synthesis",
+    "source_file": "data/eval_samples/large_doc.txt",
+    "file_type": ".txt",
+    "expected_agent": "DocumentAgent",
+    "question": "What are the key mitigation strategies for climate change discussed in the document?",
+    "expected_answer": "The key mitigation strategies include energy transition from fossil fuels to renewable sources like solar and wind, transportation electrification with electric vehicles, carbon capture and storage technologies, direct air capture, and nature-based solutions like reforestation and wetland restoration."
+  },
+  {
+    "id": "TC-008",
+    "description": "CSV spreadsheet — specific data lookup",
+    "source_file": "data/eval_samples/sales_data.csv",
+    "file_type": ".csv",
+    "expected_agent": "ExcelAgent",
+    "question": "What was the revenue for Widget B in North America in Q4 2024?",
+    "expected_answer": "The revenue for Widget B in North America in Q4 2024 was $187,500 with 1,250 units sold and a profit margin of 33.1%."
+  },
+  {
+    "id": "TC-009",
+    "description": "CSV spreadsheet — cross-row comparison",
+    "source_file": "data/eval_samples/sales_data.csv",
+    "file_type": ".csv",
+    "expected_agent": "ExcelAgent",
+    "question": "Which region had the highest profit margin for Widget A?",
+    "expected_answer": "North America had the highest profit margin for Widget A, reaching 26.8% in Q4 2024, compared to Europe's peak of 23.2% and Asia Pacific's peak of 22.3%."
+  },
+  {
+    "id": "TC-010",
+    "description": "Large document — specific statistic from later sections",
+    "source_file": "data/eval_samples/large_doc.txt",
+    "file_type": ".txt",
+    "expected_agent": "DocumentAgent",
+    "question": "What does the Paris Agreement aim to achieve regarding global temperature?",
+    "expected_answer": "The Paris Agreement aims to hold the increase in global average temperature to well below 2 degrees Celsius above pre-industrial levels and to pursue efforts to limit the temperature increase to 1.5 degrees Celsius."
+  }
+]

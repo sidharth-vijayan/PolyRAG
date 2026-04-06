@@ -1,0 +1,25 @@
+Region,Product,Quarter,Units_Sold,Revenue_USD,Profit_Margin_Pct
+North America,Widget A,Q1 2024,1500,75000,22.5
+North America,Widget A,Q2 2024,1800,90000,24.1
+North America,Widget A,Q3 2024,2100,105000,25.3
+North America,Widget A,Q4 2024,2400,120000,26.8
+Europe,Widget A,Q1 2024,1200,60000,20.1
+Europe,Widget A,Q2 2024,1350,67500,21.5
+Europe,Widget A,Q3 2024,1500,75000,22.0
+Europe,Widget A,Q4 2024,1700,85000,23.2
+North America,Widget B,Q1 2024,800,120000,30.5
+North America,Widget B,Q2 2024,950,142500,31.2
+North America,Widget B,Q3 2024,1100,165000,32.0
+North America,Widget B,Q4 2024,1250,187500,33.1
+Europe,Widget B,Q1 2024,600,90000,28.7
+Europe,Widget B,Q2 2024,700,105000,29.5
+Europe,Widget B,Q3 2024,850,127500,30.2
+Europe,Widget B,Q4 2024,950,142500,31.0
+Asia Pacific,Widget A,Q1 2024,900,45000,18.5
+Asia Pacific,Widget A,Q2 2024,1100,55000,19.8
+Asia Pacific,Widget A,Q3 2024,1300,65000,21.0
+Asia Pacific,Widget A,Q4 2024,1500,75000,22.3
+Asia Pacific,Widget B,Q1 2024,400,60000,25.5
+Asia Pacific,Widget B,Q2 2024,550,82500,26.8
+Asia Pacific,Widget B,Q3 2024,700,105000,28.0
+Asia Pacific,Widget B,Q4 2024,850,127500,29.2

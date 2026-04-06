@@ -1,0 +1,45 @@
+# ============================================================
+# requirements.txt — MultiModal RAG System
+# ============================================================
+# Install with: pip install -r requirements.txt
+# ============================================================
+
+# LangChain framework for orchestration and memory
+langchain>=0.2.16
+langchain-community>=0.2.16
+langchain-google-genai>=1.0.10
+
+# Google Gemini SDK (primary LLM)
+google-generativeai>=0.7.2
+
+# Sentence embeddings (local, no API cost)
+sentence-transformers>=3.0.1
+
+# ChromaDB vector database (local persistence)
+chromadb>=0.5.5
+
+# PDF parsing
+PyMuPDF>=1.24.9
+
+# Word document parsing
+python-docx>=1.1.2
+
+# Excel/CSV handling
+pandas>=2.2.2
+openpyxl>=3.1.5
+
+# Image processing and OCR
+Pillow>=10.4.0
+pytesseract>=0.3.13
+
+# Streamlit UI framework
+streamlit>=1.38.0
+
+# Environment variable loading
+python-dotenv>=1.0.1
+
+# Numerical computing
+numpy>=1.26.4
+
+# HTTP requests (used for Ollama fallback)
+requests>=2.32.3
