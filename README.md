@@ -31,3 +31,21 @@ It combines specialized agents with a central coordinator to deliver accurate, c
   * Improved response consistency
 
 ---
+
+
+## ⚙️ Installation
+
+```bash
+git clone https://github.com/sidharth-vijayan/PolyRAG.git
+cd PolyRAG
+pip install -r requirements.txt
+```
+
+---
+
+## ▶️ Usage
+
+Run the main app:
+
+```bash
+python app.py
