@@ -1,12 +1,4 @@
-# ============================================================
 # agents/excel_agent.py — Excel/CSV Processing Agent
-# ============================================================
-# Handles .xlsx and .csv files:
-#   - Reads spreadsheets using pandas
-#   - Converts each row to a natural-language string
-#   - Embeds and stores rows in ChromaDB 'excel' collection
-#   - Provides semantic search over indexed tabular data
-# ============================================================
 
 import os
 import pandas as pd

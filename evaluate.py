@@ -1,17 +1,5 @@
-# ============================================================
-# evaluate.py — RAG Evaluation Bench
-# ============================================================
 # Runs a test bench of Q&A pairs through the full RAG pipeline
 # and computes retrieval, generation, and system-level metrics.
-#
-# Usage:
-#   python evaluate.py --bench test_bench.json --output results/
-#   python evaluate.py --bench test_bench.json --runs 3
-#
-# The script produces:
-#   - eval_report.json  (machine-readable full results)
-#   - eval_report.md    (paper-ready markdown tables)
-# ============================================================
 
 import os
 import sys
@@ -74,10 +62,6 @@ class RAGEvaluator:
     def __init__(self, num_runs: int = 1):
         self.num_runs = num_runs
 
-    # ============================================================
-    # Main entry point
-    # ============================================================
-
     def evaluate(self, test_cases: list[dict]) -> dict:
         """
         Run the full evaluation bench.
@@ -114,9 +98,6 @@ class RAGEvaluator:
 
         return report
 
-    # ============================================================
-    # Per-case evaluation (with multi-run)
-    # ============================================================
 
     def _evaluate_single_case(self, tc: dict) -> dict:
         """Evaluate one test case across multiple runs."""
@@ -214,11 +195,6 @@ class RAGEvaluator:
         )
         generation_latency_ms = (time.time() - t0) * 1000
 
-        # ---- 4. Streaming TTFT measurement ----
-        # TTFT includes the API call + time to first yielded token.
-        # For cloud LLMs (Groq/Gemini) that return full response in
-        # one chunk, TTFT ≈ generation latency (expected behavior).
-        # For Ollama (true streaming), TTFT reflects actual first-token time.
         ttft_ms = None
         try:
             t_stream_start = time.time()
@@ -284,10 +260,6 @@ class RAGEvaluator:
             "indexing_latency_ms": indexing_latency_ms,
         }
 
-    # ============================================================
-    # Multi-run averaging
-    # ============================================================
-
     def _average_runs(self, run_metrics: list[dict]) -> dict:
         """
         Average metrics across multiple runs.
@@ -326,10 +298,6 @@ class RAGEvaluator:
 
         return averaged
 
-    # ============================================================
-    # Aggregate summary
-    # ============================================================
-
     def _compute_aggregate(self, all_case_results: list[dict]) -> dict:
         """Compute aggregate metrics across all test cases."""
 
@@ -364,10 +332,6 @@ class RAGEvaluator:
 
         return summary
 
-
-# ============================================================
-# Report generation
-# ============================================================
 
 def save_json_report(report: dict, output_dir: str):
     """Save the full report as JSON."""
@@ -487,10 +451,6 @@ def _fmt(metrics: dict, key: str) -> str:
         return f"{mean_v:.2f}±{std_v:.2f}"
     return f"{mean_v:.2f}"
 
-
-# ============================================================
-# CLI Entry Point
-# ============================================================
 
 def main():
     parser = argparse.ArgumentParser(

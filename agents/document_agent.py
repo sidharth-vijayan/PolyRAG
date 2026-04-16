@@ -1,13 +1,4 @@
-# ============================================================
 # agents/document_agent.py — Document Processing Agent
-# ============================================================
-# Handles PDF and TXT files:
-#   - Extracts text from PDFs page-by-page using PyMuPDF
-#   - Reads plain text files directly
-#   - Chunks text with a sliding window
-#   - Embeds and stores chunks in ChromaDB 'documents' collection
-#   - Provides semantic search over indexed documents
-# ============================================================
 
 import os
 import fitz  # PyMuPDF

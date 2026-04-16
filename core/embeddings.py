@@ -1,10 +1,5 @@
-# ============================================================
 # core/embeddings.py — Embedding Model Wrapper
-# ============================================================
 # Provides a singleton wrapper around the SentenceTransformer
-# model (all-MiniLM-L6-v2) so the model is loaded into memory
-# only once across the entire application lifetime.
-# ============================================================
 
 # Force Hugging Face to use cached models only (no network check)
 import os

@@ -1,6 +1,4 @@
-# ============================================================
 # .gitignore — MultiModal RAG System
-# ============================================================
 
 # Environment variables (contains API keys — never commit)
 .env

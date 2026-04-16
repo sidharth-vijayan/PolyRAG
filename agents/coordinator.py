@@ -1,14 +1,4 @@
-# ============================================================
 # agents/coordinator.py — Multi-Agent Coordinator
-# ============================================================
-# Routes user queries to the appropriate agent(s) based on:
-#   1. Explicit keywords in the query (excel, image, document)
-#   2. The most recently uploaded file type (when no keywords)
-#   3. All agents as a final fallback
-#
-# This module does NOT call any LLM — it only coordinates
-# which agents to query and merges their retrieval results.
-# ============================================================
 
 from agents.document_agent import document_agent
 from agents.excel_agent import excel_agent

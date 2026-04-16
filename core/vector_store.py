@@ -1,6 +1,4 @@
-# ============================================================
 # core/vector_store.py — ChromaDB Vector Store Wrapper
-# ============================================================
 # Manages ChromaDB collections for documents, excel, and
 import os
 import logging

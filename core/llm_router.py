@@ -1,19 +1,7 @@
-# ============================================================
 # core/llm_router.py — LLM Router: Groq → Gemini → Ollama
-# ============================================================
 # This is the SINGLE entry point for all LLM calls in the
 # entire application. No other module should call any LLM
 # directly.
-#
-# Priority chain (when online):
-#   1. Groq (llama-3.3-70b-versatile) — fast cloud inference
-#   2. Google Gemini 2.0 Flash        — free-tier cloud
-#   3. Ollama (gpt-oss:20b)           — local offline fallback
-#   4. If ALL three fail              → raise RuntimeError
-#
-# When offline (no internet detected):
-#   → Skips Groq & Gemini, goes directly to Ollama
-# ============================================================
 
 import json
 import socket

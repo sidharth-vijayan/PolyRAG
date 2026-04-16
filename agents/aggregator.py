@@ -1,13 +1,4 @@
-# ============================================================
 # agents/aggregator.py — Response Aggregator (RAG Prompt Builder)
-# ============================================================
-# Takes the retrieved context chunks from the coordinator,
-# combines them with conversation history, builds a structured
-# RAG prompt, and calls the LLM via llm_router.
-#
-# This is the ONLY agent that interacts with an LLM — and it
-# does so exclusively through the llm_router, never directly.
-# ============================================================
 
 from core.llm_router import generate as llm_generate
 from core.llm_router import generate_stream as llm_generate_stream

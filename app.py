@@ -1,14 +1,4 @@
-# ============================================================
-# app.py — Streamlit Chat UI for MultiModal RAG System
-# ============================================================
 # Main entry point for the application. Provides:
-#   - File upload sidebar (PDF, TXT, DOCX, XLSX, CSV, PNG, JPG, JPEG)
-#   - LLM status indicators (Gemini & Ollama)
-#   - Chat interface with conversation history
-#   - Agent and LLM source labels on each response
-#
-# Run with: streamlit run app.py
-# ============================================================
 
 import os
 import sys
@@ -27,10 +17,6 @@ from core.memory import conversation_memory
 from core.vector_store import vector_store
 from core.llm_router import check_llm_status
 
-
-# ============================================================
-# Page Configuration
-# ============================================================
 st.set_page_config(
     page_title="MultiModal RAG",
     page_icon="🧠",
@@ -39,9 +25,6 @@ st.set_page_config(
 )
 
 
-# ============================================================
-# Custom CSS for dark-themed chat UI
-# ============================================================
 st.markdown(
     """
     <style>
@@ -104,9 +87,6 @@ st.markdown(
 )
 
 
-# ============================================================
-# Session State Initialization
-# ============================================================
 if "chat_history" not in st.session_state:
     st.session_state.chat_history = []
 
@@ -129,9 +109,6 @@ if "session_initialized" not in st.session_state:
     st.session_state.session_initialized = True
 
 
-# ============================================================
-# Helper: Map file extension to the correct agent
-# ============================================================
 AGENT_MAP = {
     ".pdf": ("DocumentAgent", document_agent),
     ".txt": ("DocumentAgent", document_agent),
@@ -182,9 +159,6 @@ def index_uploaded_file(uploaded_file) -> str:
             pass
 
 
-# ============================================================
-# Sidebar
-# ============================================================
 with st.sidebar:
     st.title("🧠 MultiModal RAG")
     st.caption("Multi-Agent Retrieval-Augmented Generation")
@@ -326,9 +300,6 @@ with st.sidebar:
         st.rerun()
 
 
-# ============================================================
-# Main Chat Area
-# ============================================================
 st.title("💬 Chat")
 
 # ---- Display chat history ----

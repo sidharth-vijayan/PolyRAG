@@ -1,10 +1,6 @@
-# ============================================================
-# config.py — Central Configuration for MultiModal RAG System
-# ============================================================
 # Loads environment variables and defines all constants used
 # across the application. Import from here instead of
 # hard-coding values in individual modules.
-# ============================================================
 
 import os
 from dotenv import load_dotenv

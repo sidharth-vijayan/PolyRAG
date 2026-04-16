@@ -1,13 +1,5 @@
-# ============================================================
 # agents/image_agent.py — Image Processing Agent (Vision LLM + OCR)
-# ============================================================
 # Handles .png, .jpg, .jpeg image files:
-#   1. Sends the image to a vision-capable LLM to get a rich
-#      description (Groq vision → Gemini vision fallback)
-#   2. Also runs Tesseract OCR to extract any printed text
-#   3. Combines both into a single text for ChromaDB indexing
-#   4. Provides semantic search over indexed image descriptions
-# ============================================================
 
 import os
 import base64
