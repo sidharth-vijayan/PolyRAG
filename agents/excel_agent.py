@@ -56,13 +56,18 @@ class ExcelAgent:
             metadatas = []
             ids = []
 
-            for idx, row in df.iterrows():
-                # Build "Row N: col1 is val1, col2 is val2, ..."
-                parts = [
-                    f"{col} is {val}"
-                    for col, val in row.items()
-                    if pd.notna(val)
-                ]
+            # Using itertuples is significantly faster than iterrows for large DataFrames
+            cols = df.columns.tolist()
+            for row in df.itertuples():
+                idx = row.Index
+                parts = []
+                for col_name, val in zip(cols, row[1:]):
+                    if pd.notna(val) and str(val).strip() != "":
+                        parts.append(f"{col_name} is {val}")
+                        
+                if not parts:
+                    continue  # Skip entirely empty rows
+                    
                 row_text = f"Row {idx + 1}: {', '.join(parts)}"
                 texts.append(row_text)
                 metadatas.append(
@@ -74,13 +79,15 @@ class ExcelAgent:
                 )
                 ids.append(f"excel_{filename}_{idx}")
 
-            # Store in ChromaDB
-            vector_store.add_documents(
-                collection_name=self.collection,
-                texts=texts,
-                metadatas=metadatas,
-                ids=ids,
-            )
+            # Store in ChromaDB in batches to prevent memory/latency spikes
+            BATCH_SIZE = 250
+            for i in range(0, len(texts), BATCH_SIZE):
+                vector_store.add_documents(
+                    collection_name=self.collection,
+                    texts=texts[i:i+BATCH_SIZE],
+                    metadatas=metadatas[i:i+BATCH_SIZE],
+                    ids=ids[i:i+BATCH_SIZE],
+                )
 
             return (
                 f"[{self.name}] Indexed '{filename}': "

@@ -110,8 +110,9 @@ class Aggregator:
             stream, llm_source = llm_generate_stream(prompt)
             return stream, llm_source
         except RuntimeError as e:
+            error_msg = str(e)
             def _error_gen():
-                yield str(e)
+                yield error_msg
             return _error_gen(), "Error"
 
 

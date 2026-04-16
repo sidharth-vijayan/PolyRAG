@@ -9,6 +9,10 @@
 import os
 from dotenv import load_dotenv
 
+# Hard-disable ChromaDB telemetry to stop posthog client crashes
+os.environ["ANONYMIZED_TELEMETRY"] = "False"
+os.environ["CHROMA_TELEMETRY_IMPL"] = "None"
+
 # Load environment variables from .env file
 load_dotenv()
 

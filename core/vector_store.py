@@ -2,11 +2,17 @@
 # core/vector_store.py — ChromaDB Vector Store Wrapper
 # ============================================================
 # Manages ChromaDB collections for documents, excel, and
-# images. Provides methods to add embeddings and perform
-# semantic search across any collection.
-# ============================================================
+import os
+import logging
+
+# Hard-disable telemetry via env var (fallback)
+os.environ["ANONYMIZED_TELEMETRY"] = "False"
+
+# Suppress the broken ChromaDB posthog logger which ignores configs
+logging.getLogger("chromadb.telemetry.product.posthog").setLevel(logging.CRITICAL)
 
 import chromadb
+from chromadb.config import Settings
 from core.embeddings import embedder
 from config import (
     CHROMA_PERSIST_DIR,
@@ -29,7 +35,10 @@ class VectorStore:
     def __init__(self):
         """Initialize the ChromaDB client with local persistence."""
         print(f"[VectorStore] Initializing ChromaDB at: {CHROMA_PERSIST_DIR}")
-        self.client = chromadb.PersistentClient(path=CHROMA_PERSIST_DIR)
+        self.client = chromadb.PersistentClient(
+            path=CHROMA_PERSIST_DIR,
+            settings=Settings(anonymized_telemetry=False)
+        )
 
     def _get_collection(self, collection_name: str):
         """
