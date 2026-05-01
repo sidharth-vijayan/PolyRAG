@@ -1,12 +1,9 @@
 # core/embeddings.py — Embedding Model Wrapper
 # Provides a singleton wrapper around the SentenceTransformer
 
-# Force Hugging Face to use cached models only (no network check)
 import os
 import warnings
 
-os.environ["HF_HUB_OFFLINE"] = "1"
-os.environ["TRANSFORMERS_OFFLINE"] = "1"
 
 # Ignore the PyTorch/SentenceTransformers warning on Windows
 warnings.filterwarnings(
