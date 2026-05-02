@@ -6,7 +6,7 @@ import base64
 import requests
 import pytesseract
 from PIL import Image
-import google.generativeai as genai
+import google.genai as genai
 from config import (
     TESSERACT_PATH,
     COLLECTION_IMAGES,
