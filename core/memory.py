@@ -1,7 +1,10 @@
 # core/memory.py — Conversation Memory Manager
 # Wraps LangChain ConversationBufferMemory to store the last N messages of the convo
 
-from langchain.memory import ConversationBufferMemory 
+try:
+    from langchain.memory import ConversationBufferMemory
+except ImportError:
+    from langchain_community.memory import ConversationBufferMemory
 from config import MEMORY_MAX_MESSAGES
 
 
