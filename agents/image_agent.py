@@ -22,7 +22,7 @@ from core.vector_store import vector_store
 pytesseract.pytesseract.tesseract_cmd = TESSERACT_PATH
 
 # ---- Configure Gemini for vision fallback ----
-genai.configure(api_key=GEMINI_API_KEY)
+gemini_client = genai.Client(api_key=GEMINI_API_KEY)
 
 # ---- MIME type mapping ----
 MIME_TYPES = {
@@ -208,11 +208,13 @@ class ImageAgent:
 
             # ---- Try Gemini Vision ----
             try:
-                model = genai.GenerativeModel(GEMINI_MODEL)
                 img = Image.open(file_path)
-                response = model.generate_content([prompt_text, img])
+                response = gemini_client.models.generate_content(
+                    model=GEMINI_MODEL,
+                    contents=[prompt_text, img],
+                )
                 print(f"[{self.name}] Image described via Gemini Vision.")
-                return response.text
+                return response.text    
 
             except Exception as e:
                 print(f"[{self.name}] Gemini vision failed: {e}")
