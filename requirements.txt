@@ -1,7 +1,7 @@
 # LangChain framework for orchestration and memory
-langchain>=0.2.16
-langchain-community>=0.2.16
-langchain-google-genai>=1.0.10
+langchain==0.2.16
+langchain-community==0.2.16
+langchain-google-genai==1.0.10
 
 # Google Gemini SDK (primary LLM)
 google-generativeai>=0.7.2
