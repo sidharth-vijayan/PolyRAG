@@ -8,13 +8,6 @@ os.environ["CHROMA_TELEMETRY_IMPL"] = "None"
 # Load .env locally; on Streamlit Cloud, inject secrets into env
 load_dotenv()
 
-try:
-    import streamlit as st
-    for key, value in st.secrets.items():
-        os.environ.setdefault(key, value)
-except Exception:
-    pass  # Not running on Streamlit Cloud, or no secrets configured
-
 # ---- Groq ----
 GROQ_API_KEY = os.getenv("GROQ_API_KEY", "")
 GROQ_MODEL = "llama-3.3-70b-versatile"

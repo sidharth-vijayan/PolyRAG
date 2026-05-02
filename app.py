@@ -1,11 +1,19 @@
 # Main entry point for the application. Provides:
 
+
 import os
-import sys
-import tempfile
 import streamlit as st
 
-# Ensure the project root is on the Python path so imports work
+# Load Streamlit Cloud secrets into environment variables
+try:
+    for key, value in st.secrets.items():
+        os.environ.setdefault(key, value)
+except Exception:
+    pass
+
+import sys
+import tempfile
+
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from agents.document_agent import document_agent
