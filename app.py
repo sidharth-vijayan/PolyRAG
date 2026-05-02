@@ -4,6 +4,13 @@
 import os
 import streamlit as st
 
+st.set_page_config(
+    page_title="MultiModal RAG",
+    page_icon="🧠",
+    layout="wide",
+    initial_sidebar_state="expanded",
+)
+
 # Load Streamlit Cloud secrets into environment variables
 try:
     for key, value in st.secrets.items():
@@ -24,14 +31,6 @@ from agents.aggregator import aggregator
 from core.memory import conversation_memory
 from core.vector_store import vector_store
 from core.llm_router import check_llm_status
-
-st.set_page_config(
-    page_title="MultiModal RAG",
-    page_icon="🧠",
-    layout="wide",
-    initial_sidebar_state="expanded",
-)
-
 
 st.markdown(
     """

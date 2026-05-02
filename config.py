@@ -38,8 +38,14 @@ CHUNK_OVERLAP = 50
 # ---- Retrieval ----
 TOP_K_RESULTS = 4
 
-# ---- Tesseract OCR Path (Windows only, ignored on cloud) ----
-TESSERACT_PATH = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+import platform
+
+# ---- Tesseract OCR Path ----
+if platform.system() == "Windows":
+    TESSERACT_PATH = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+else:
+    # Streamlit Community Cloud uses Debian Linux
+    TESSERACT_PATH = "/usr/bin/tesseract"
 
 # ---- Memory ----
 MEMORY_MAX_MESSAGES = 10
